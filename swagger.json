@@ -1,0 +1,64 @@
+{
+    "swagger": "2.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "NodeJS-CRUD-REST-API-Boilerplate With SwaggerUi",
+        "description": "A minimal and easy to follow example of what you need to create a CRUD style API in NodeJs using TypeScript",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }   
+    },
+    "host": "localhost:5000",
+    "basePath": "",
+    "tags":[
+        {
+            "name": "Tours",
+            "description": "API for Tours"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/tours": {
+            "get": {
+                "tags": [
+                    "Tours"
+                ]
+            },
+            "summary": "Get all tours in system",
+            "response": {
+                "200": {
+                    "description": "OK"
+                }
+            }
+        }
+    },
+    "definitions": {
+        "id": {
+            "properties": {
+                "uuid": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
